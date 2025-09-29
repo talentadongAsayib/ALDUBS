@@ -1,2 +1,0 @@
-# ALDUBS
-Arjo korap
