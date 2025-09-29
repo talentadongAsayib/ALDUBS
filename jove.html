@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Party Style Web Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Comic Neue', cursive, Arial, sans-serif;
+      background: linear-gradient(135deg, #ff0080, #ff8c00, #ffe600, #00e6e6, #8a2be2);
+      background-size: 400% 400%;
+      animation: partybg 15s ease infinite;
+      color: #fff;
+      overflow-x: hidden;
+    }
+ 
+    @keyframes partybg {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+ 
+    /* Header */
+    header {
+      background: rgba(0,0,0,0.6);
+      color: #fff;
+      text-align: center;
+      padding: 35px;
+      box-shadow: 0 0 25px #fff;
+      border-bottom: 4px dashed #ffe600;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      text-shadow: 3px 3px 12px #ff0080, 0 0 20px #ffe600;
+    }
+    header p {
+      margin-top: 12px;
+      font-size: 1rem;
+      color: #fffb96;
+    }
+ 
+    /* Navbar */
+    nav {
+      background: rgba(0,0,0,0.8);
+      text-align: center;
+      padding: 14px;
+      border-bottom: 3px solid #ff8c00;
+    }
+    nav a {
+      color: #ffe600;
+      text-decoration: none;
+      margin: 0 18px;
+      font-size: 1rem;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #ff0080;
+      text-shadow: 0 0 10px #fff, 0 0 25px #ff0080;
+      transform: rotate(-5deg) scale(1.2);
+    }
+ 
+    /* Sections */
+    section {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      margin-top: 25px;
+      box-shadow: 0 0 25px rgba(0,0,0,0.5);
+    }
+    section h2 {
+      color: #ffe600;
+      margin-bottom: 20px;
+      font-size: 1.4rem;
+      text-shadow: 0 0 8px #ff0080, 0 0 12px #00e6e6;
+    }
+    p {
+      line-height: 1.7;
+      font-size: 1rem;
+    }
+ 
+    /* Table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      border-radius: 15px;
+      overflow: hidden;
+    }
+    th, td {
+      padding: 14px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #fff;
+    }
+    th {
+      background: #ff0080;
+      text-shadow: 1px 1px 6px #000;
+    }
+    tr:nth-child(even) { background: rgba(255, 140, 0, 0.7); }
+    tr:nth-child(odd) { background: rgba(0, 230, 230, 0.7); }
+ 
+    /* Contact */
+    .contact-link {
+      display: inline-block;
+      padding: 12px 22px;
+      background: #ffe600;
+      color: #000;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      box-shadow: 0 0 15px #ffe600, 0 0 25px #ff0080;
+      transition: 0.3s;
+    }
+    .contact-link:hover {
+      background: #ff0080;
+      color: #fff;
+      box-shadow: 0 0 20px #ff0080, 0 0 40px #ffe600;
+    }
+ 
+    /* Footer */
+    footer {
+      background: rgba(0,0,0,0.8);
+      color: #ffe600;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      border-top: 3px dashed #ff0080;
+    }
+    footer a {
+      color: #00e6e6;
+      text-decoration: none;
+      font-weight: bold;
+    }
+ 
+    /* Party Motto */
+    .motto {
+      position: fixed;
+      bottom: 35px;
+      width: 100%;
+      text-align: center;
+      font-size: 1.2rem;
+      color: #fff;
+      font-weight: bold;
+      text-shadow: 0 0 12px #ff0080, 0 0 24px #ffe600, 0 0 36px #00e6e6;
+      animation: glow 2s infinite alternate, bounce 3s infinite;
+    }
+    @keyframes glow {
+      0% { text-shadow: 0 0 12px #ff0080, 0 0 24px #ffe600; }
+      50% { text-shadow: 0 0 20px #00e6e6, 0 0 40px #ff8c00; }
+      100% { text-shadow: 0 0 15px #ff0080, 0 0 35px #ffe600, 0 0 55px #00e6e6; }
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+  </style>
+ 
+  <!-- Party font -->
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>🎉 Welcome to My Party Zone 🎉</h1>
+    <p>By Jove Rexal C. Vasquez | HTML & CSS in Party Mode</p>
+  </header>
+ 
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#contact">Contact</a>
+  </nav>
+ 
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hey there! I’m <strong>Jove Rexal C. Vasquez</strong>. I love fun vibes, technology, and enjoying life like it’s a party 🎶. This website is my colorful space — mixing coding with celebration!</p>
+  </section>
+ 
+  <section id="hobbies">
+    <h2>My Hobbies</h2>
+    <p>Here’s what makes my everyday feel like a celebration 🎊:</p>
+    <table>
+      <tr>
+        <th>Hobby</th>
+        <th>Frequency</th>
+        <th>Fun Level</th>
+      </tr>
+      <tr>
+        <td>Playing Online Games</td>
+        <td>Almost Everyday</td>
+        <td>🎮🎮🎮🎮🎮</td>
+      </tr>
+      <tr>
+        <td>Loves Eating</td>
+        <td>Daily</td>
+        <td>🍕🍔🍣🍩🍦</td>
+      </tr>
+      <tr>
+        <td>Coding</td>
+        <td>3x a Week</td>
+        <td>💻💻💻💻</td>
+      </tr>
+    </table>
+  </section>
+ 
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Wanna join the fun? Hit me up on Facebook:</p>
+    <a href="https://www.facebook.com/share/1bKVgUw2QP/" target="_blank" class="contact-link">🎉 Add Me on Facebook</a>
+  </section>
+ 
+  <footer>
+    <p>© 2025 Jove Rexal C. Vasquez | Party Mode Activated 🥳</p>
+    <p>Follow me on <a href="https://www.facebook.com/share/1bKVgUw2QP/" target="_blank">Facebook</a></p>
+  </footer>
+ 
+  <!-- Party Motto -->
+  <div class="motto">"There is no rewind so make sure your decision is right"</div>
+</body>
+</html>
+ 
