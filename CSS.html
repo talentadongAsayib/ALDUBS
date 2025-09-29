@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Arcade Style Web Page</title>
+<style>
+    body {
+      margin: 0;
+      font-family: 'Press Start 2P', cursive, Arial, sans-serif;
+      background: radial-gradient(circle, #0d0d0d, #1a1a1a);
+      color: #00ffea;
+      overflow-x: hidden;
+    }
+ 
+    /* Header */
+    header {
+      background: linear-gradient(to right, #ff0054, #ff5400);
+      color: #fff;
+      text-align: center;
+      padding: 30px;
+      box-shadow: 0 0 20px #ff0054;
+    }
+ 
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+      text-shadow: 2px 2px 5px #000;
+    }
+ 
+    header p {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: #ffe066;
+    }
+ 
+    /* Navbar */
+    nav {
+      background: #111;
+      text-align: center;
+      padding: 14px;
+      box-shadow: 0 0 15px #00ffea;
+    }
+ 
+    nav a {
+      color: #00ffea;
+      text-decoration: none;
+      margin: 0 18px;
+      font-size: 0.9rem;
+      transition: 0.3s;
+    }
+ 
+    nav a:hover {
+      color: #ff0054;
+      text-shadow: 0 0 8px #ff0054;
+    }
+ 
+    /* Sections */
+    section {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+ 
+    section h2 {
+      color: #ffe066;
+      border-left: 6px solid #ff0054;
+      padding-left: 10px;
+      margin-bottom: 20px;
+      text-shadow: 0 0 5px #ff5400;
+    }
+ 
+    p {
+      line-height: 1.7;
+      font-size: 0.9rem;
+    }
+ 
+    /* Table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      box-shadow: 0 0 15px #00ffea;
+    }
+ 
+    th, td {
+      border: 1px solid #ff0054;
+      padding: 14px;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #fff;
+    }
+ 
+    th {
+      background: #ff0054;
+      color: #fff;
+      text-shadow: 1px 1px 4px #000;
+    }
+ 
+    tr:nth-child(even) {
+      background: #222;
+    }
+ 
+    tr:nth-child(odd) {
+      background: #111;
+    }
+ 
+    /* Contact */
+    .contact-link {
+      display: inline-block;
+      padding: 12px 22px;
+      background: #ff5400;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+      box-shadow: 0 0 15px #ff5400;
+      transition: 0.3s;
+    }
+ 
+    .contact-link:hover {
+      background: #ff0054;
+      box-shadow: 0 0 20px #ff0054;
+    }
+ 
+    /* Footer */
+    footer {
+      background: #111;
+      color: #00ffea;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 0.8rem;
+      box-shadow: 0 -4px 15px #ff0054;
+    }
+ 
+    footer a {
+      color: #ffe066;
+      text-decoration: none;
+    }
+ 
+    /* Neon Motto */
+    .motto {
+      position: fixed;
+      bottom: 40px;
+      width: 100%;
+      text-align: center;
+      font-size: 1.1rem;
+      color: #ff0054;
+      text-shadow: 0 0 10px #ff0054, 0 0 20px #ff5400, 0 0 30px #ffe066;
+      animation: flicker 2s infinite alternate;
+    }
+ 
+    @keyframes flicker {
+      0% { opacity: 1; text-shadow: 0 0 10px #ff0054, 0 0 20px #ff5400; }
+      50% { opacity: 0.7; text-shadow: 0 0 20px #ffe066, 0 0 40px #ff5400; }
+      100% { opacity: 1; text-shadow: 0 0 15px #ff0054, 0 0 30px #ff5400, 0 0 50px #ffe066; }
+    }
+</style>
+<!-- Arcade font -->
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+ 
+  <header>
+<h1>Welcome to My Arcade Zone</h1>
+<p>By Jhon Kyle P. Martinez | Powered with HTML & CSS</p>
+</header>
+ 
+  <nav>
+<a href="#about">About Me</a>
+<a href="#hobbies">Hobbies</a>
+<a href="#contact">Contact</a>
+</nav>
+ 
+  <section id="about">
+<h2>About Me</h2>
+<p>Hi, I’m <strong>Jhon Kyle P. Martinez</strong>.  
+    I’m passionate about technology, creativity, and gaming culture 🎮.  
+    This arcade-inspired website is part of my HTML & CSS practice, combining design, fun, and a retro vibe.</p>
+</section>
+ 
+  <section id="hobbies">
+<h2>My Hobbies</h2>
+<p>Here are some arcade-worthy activities I enjoy during my free time:</p>
+<table>
+<tr>
+<th>Hobby</th>
+<th>Frequency</th>
+<th>Fun Level</th>
+</tr>
+<tr>
+<td>Playing Online Games</td>
+<td>Almost Everyday</td>
+<td>🔥🔥🔥🔥🔥</td>
+</tr>
+<tr>
+<td>Loves Eating</td>
+<td>Daily</td>
+<td>🍔🍕🍣🍩🍦</td>
+</tr>
+<tr>
+<td>Coding</td>
+<td>3x a Week</td>
+<td>💻💻💻💻</td>
+</tr>
+</table>
+</section>
+ 
+  <section id="contact">
+<h2>Contact</h2>
+<p>If you’d like to connect with me, here’s my Facebook profile:</p>
+<a href="https://www.facebook.com/kyle.martinezll" target="_blank" class="contact-link">🔥 Add Me on Facebook</a>
+</section>
+ 
+  <footer>
+<p>© 2025 Jhon Kyle P. Martinez | Designed with ❤️ in Arcade Style</p>
+<p>Follow me on <a href="https://www.facebook.com/kyle.martinezll" target="_blank">Facebook</a></p>
+</footer>
+ 
+  <!-- Neon Motto -->
+<div class="motto">"Leave your fear behind, bring only your fire!"</div>
+ 
+</body>
+</html>
